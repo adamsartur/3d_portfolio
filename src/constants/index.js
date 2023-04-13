@@ -9,6 +9,8 @@ import {
   css,
   reactjs,
   redux,
+  hookit,
+  zustand,
   tailwind,
   nodejs,
   mongodb,
@@ -23,6 +25,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  neon,
+  mindmaps,
+  sap,
+  logo
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +60,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "SDK Support Expert",
     icon: creator,
   },
 ];
@@ -81,8 +87,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Zustand",
+    icon: zustand,
   },
   {
     name: "Tailwind CSS",
@@ -96,75 +102,76 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Fullstack Developer",
+    company_name: "Independent",
+    icon: logo,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Mar 2009 - Apr 2014",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining web applications either for direct customers, or hired as outsource.",
+      "Raising requisites and delivering end-to-end projects.",
+      "According to project needs I would sometimes gather a team to work toghether.",
+      "Mostly used techs: Php, Js, MySQL, jQuery, Wordpress and git",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer",
+    company_name: "Hookit",
+    icon: hookit,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Apr 2013 - Jan 2014",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Raise requirements, build out functionalities to deliver MVP of the startup.",
+      "With few resources we were selected for 2 acceleration programs which founded the company.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Frontend Developer",
+    company_name: "Hookit",
+    icon: hookit,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2014 - Sep 2016",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Build and ship Frontend Stack for the applications, delivering responsive layouts with Pixel Precision.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Maintaining coding standards and studying best technologies to approach requirements.",
+      "Keep a close communication with Customer, Designer and Backend Engineers, in order to coordinate and function optimally.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "SDK Support for Partners",
+    company_name: "SAP",
+    icon: sap,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2016 - Jan 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Provide support for Partners making use of custom SDK to enhance C4C and ByD products from SAP.",
+      "Review complex scenarios from customers, to identify either SDK is behaving incorrectly, or if the partner's implementation needs to be fixed.",
+      "Collaborate with international teams in a big organization which requires following processes, generating documentation and communicating clearly.",
+      "Participated and started different projects and iniciatives. Also received several trainings on both technical and soft skills, and delivered a few.",
+      "Drive end-to-end escalations, acting under pressure while maintaining the customer calm. Ensuring customer's success on critical scenarios.",
     ],
   },
 ];
@@ -172,42 +179,42 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Project STA was awarded with both Product Support Innovation All-Star Award, and Team of the Quarter. Project automated actions which reduces processes for global team from 17 clicks to 3.",
+    name: "SAP",
+    designation: "2020",
+    company: "Team of the Quarter Award",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Pluginfication - a chrome extension that adds context help to the user to gather the relevant data for support, and some information for the user.",
+    name: "SAP",
+    designation: "2021",
+    company: "Most Impactful Idea Award",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Guide.me - an app to facilitate learning with mentors. Guide me facilitates matching who wants to learn with who wants to teach.",
+    name: "SAP",
+    designation: "2020",
+    company: "1 Billion Lives LAT Challenge Winner",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Mindmaps",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An App to create mindmaps, flows and diagrams in general, with validation based on data and integration with openai",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "prismadb",
         color: "green-text-gradient",
       },
       {
@@ -215,53 +222,35 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    image: mindmaps,
+    source_code_link: "https://github.com/adamsartur/mindmaps",
+    live_link: "https://mymindmaps.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "Neon",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Just some animations I'm designing. Currently it's just pretty, but it's still being developed.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "gsap",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "threejs",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "next",
         color: "blue-text-gradient",
       },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    image: neon,
+    source_code_link: "https://github.com/adamsartur/neon",
+    live_link: "https://arturneon.netlify.app/",
   },
 ];
 

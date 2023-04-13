@@ -1,6 +1,7 @@
 import {useState, useRef} from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
+import {FaGithub, FaLinkedin, FaMailBulk} from 'react-icons/fa'
 
 import {styles} from '../styles'
 import {EarthCanvas} from './canvas'
@@ -27,29 +28,11 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="What's your name?" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Email</span>
-            <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="What's your email?" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea rows={7} name="message" value={form.message} onChange={handleChange} placeholder="What do you want to say?" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
-          </label>
-
-          <button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>
-            {loading ? 'Sending...' : 'Send'}
-          </button>
-        </form>
+        <div className="mt-12 flex flex-col gap-8 text-lg">
+          <span className='flex items-center gap-[20px] hover:text-[#915eff]'><FaGithub size={40} /> <a href="https://github.com/adamsartur" target='_blank'>You can check me on github</a></span> 
+          <span className='flex items-center gap-[20px] text-[#915eff] hover:text-white'><FaLinkedin size={40}  /> <a href="https://linkedin.com/in/arturadams/" target='_blank'>Connect on LinkedIn</a></span> 
+          <span className='flex items-center gap-[20px] hover:text-[#915eff]'><FaMailBulk size={40}  /> <a href="mailto:adamsartur@gmail.com" target='_blank'>Reach me out!</a></span> 
+        </div>
       </motion.div>
 
       <motion.div
